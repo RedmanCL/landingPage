@@ -2,23 +2,23 @@
   <q-page class="">
     <!-- Header Section-->
     <div class="header-parent">
-      <img src="../../public/bg.jpg" alt="">
+      <img src="/bg.jpg" alt="">
       <div class="hero-section-logos-contianer">
-        <img src="../../public/gsl.png" alt="">
-        <img src="../../public/galH.png" alt="">
-        <img src="../../public/Medea.png" alt="">
+        <img src="/galH.png" alt="">
+        <img src="/Medea.png" alt="">
+        <img src="/gsl.png" alt="">
       </div>
       <div class="header-container">
         <div class="grey-logo">
-          <img src="../../public/gsl.png" alt="Logo">
+          <img src="/gsl.png" alt="Logo">
         </div>
         <nav class="header-nav">
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#fees">Tuition Fees</a></li>
-            <li><a href="#learning">Learning Approach</a></li>
-            <li><a href="#documents">Documents</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="nav-button active-nav" href="#">Home</a></li>
+            <li><a class="nav-button" href="#">About</a></li>
+            <li><a class="nav-button" href="#">Tuition Fees</a></li>
+            <li><a class="nav-button" href="#">Documents</a></li>
+            <li><a class="nav-button" href="#">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -28,65 +28,142 @@
         <div class="hero-section-contianer">
           <div class="hero-section-text-contianer">
             <h1>Join Our Civil Engineering Bachelor’s Degree Program</h1>
-            <p>Partnered with MEDEA International University and Galilee International Management Institute</p>
+            <div class="hh6">
+              <h6>with Medea International University</h6>
+            </div>
+
+            <p>Greysoft Technologies has partnered with Galilee International Management Institute in offering Civil
+              Engineering Bachelor’s Degree to Nigerian students at MEDEA International University </p>
           </div>
           <div class="button-container">
-            <a href="#" class="enroll-button hero-enroll-button">ENROLL NOW <img src="../../public/arrow.png"
-                alt=""></a>
+            <a href="#" class="enroll-button hero-enroll-button">ENROLL NOW <img src="/arrow.png" alt=""></a>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Infinite flash Carousel -->
+
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide">
+          <q-img src="/pic1.jpg" spinner-color="white" style="" />
+        </div>
+        <div class="slide">
+          <q-img src="/pic2.jpg" spinner-color="white" style="" />
+        </div>
+        <div class="slide">
+          <q-img src="/pic3.jpg" spinner-color="white" style="" />
+        </div>
+        <div class="slide">
+          <q-img src="/pic4.jpg" spinner-color="white" style="" />
+        </div>
+        <div class="slide">
+          <q-img src="/pic5.jpg" spinner-color="white" style="" />
+        </div>
+        <div class="slide">
+          <q-img src="/pic6.jpg" spinner-color="white" style="" />
+        </div>
+        <div class="slide">
+          <q-img src="/pic7.jpg" spinner-color="white" style="" />
+        </div>
+        <div class="slide">
+          <q-img src="/pic8.jpg" spinner-color="white" style="" />
+        </div>
+        <div class="slide">
+          <q-img src="/pic9.jpg" spinner-color="white" style="" />
+        </div>
+        <div class="slide">
+          <q-img src="/pic10.jpg" spinner-color="white" style="" />>
+        </div>
+        <div class="slide">
+          <q-img src="/pic1.jpg" spinner-color="white" style="" />
+        </div>
+        <div class="slide">
+          <q-img src="/pic2.jpg" spinner-color="white" style="" />
+        </div>
+        <div class="slide">
+          <q-img src="/pic3.jpg" spinner-color="white" style="" />
+        </div>
+        <div class="slide">
+          <q-img src="/pic1.jpg" spinner-color="white" style="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- About Medea -->
+
+    <div class="about-container q-mt-xl q-mb-xl">
+      <div class="partnership-certificate">
+        <h3 style="font-size: 2.2em; text-align: center;">Partnership Certificate</h3>
+      </div>
+    </div>
+
+    <q-card class="my-card" flat style="padding: 0 120px">
+      <q-card-section horizontal>
+
+        <div class="content q-pa-xl" style="display: flex; flex-direction: column; justify-content: center;">
+          <h3 class="q-mb-md">About MEDEA International University</h3>
+          <p style="font-size: 1.4em;">MED.E.A Higher Education Institution for Mediterranean, Europe and Africa,
+            previously known as Pegaso
+            International, is a member of the Multiversity Group. It is renowned for providing a flexible,
+            inclusive, and accessible education to international students, offering innovative online multilingual
+            programmes designed to enhance job opportunities worldwide.</p>
+
+          <div class="download-brochure">
+            <a href="/brochure.pdf" download class="brochure-button">Download Brochure</a>
+          </div>
+          <!-- Partnership Certificate -->
+        </div>
+        <div class="col-4 gscert" @click="alert = true">
+          <q-img class="" src="/gscert.jpg" width="100%" style="border: 1px solid;" />
+        </div>
+      </q-card-section>
+    </q-card>
+
     <!-- Main content Section -->
     <div class="main-section-container">
 
-      <q-card class="my-card" flat bordered>
+      <q-card class="my-card addmarg backdrop" flat>
         <q-card-section horizontal>
-          <div class="content">
-            <h2>Civil Engineering Bachelor’s Degree with MEDEA International University</h2>
-            <p>Greysoft Technologies has partnered with Galilee International Management Institute to offer a Civil
-              Engineering Bachelor’s Degree to Nigerian students at MEDEA International University.</p>
-          </div>
+          <q-img class="col-5" src="/job.jpg" />
 
-          <q-img class="col-5" src="https://cdn.quasar.dev/img/parallax2.jpg" />
-        </q-card-section>
-      </q-card>
-
-      <q-card class="my-card" flat bordered>
-        <q-card-section horizontal>
-          <q-img class="col-5" src="https://cdn.quasar.dev/img/parallax2.jpg" />
-
-          <div class="content">
-            <h2>Job Placements</h2>
+          <div class="content odd">
+            <h3>Job Placements</h3>
             <p>Graduates have the chance to secure up to three-year job placements in civil engineering firms in North
               America and Northern Europe, offering valuable hands-on experience. These positions typically come with
               contracts that include monthly salaries ranging from €2,000 to €3,000, setting you on a solid path
               towards a successful career in civil engineering.</p>
+
+            <div class="button-container">
+              <a style="margin: 0" href="#" class="">ENROLL NOW <img src="/arrow.png" alt=""></a>
+            </div>
           </div>
         </q-card-section>
       </q-card>
 
-      <q-card class="my-card" flat bordered>
+
+      <q-card class="my-card addmarg" flat>
         <q-card-section horizontal>
-          <div class="content">
-            <h2>About MEDEA International University</h2>
-            <p>MED.E.A Higher Education Institution for Mediterranean, Europe and Africa, previously known as Pegaso
-              International, is a member of the Multiversity Group. It is renowned for providing a flexible,
-              inclusive, and accessible education to international students, offering innovative online multilingual
-              programmes designed to enhance job opportunities worldwide.</p>
+          <div class="content even">
+            <h3>Learning Approach</h3>
+            <p>The Bachelor’s Degree in Civil Engineering is delivered entirely online, providing a flexible learning
+              environment for students. The programme uses advanced e-learning methods and platforms to facilitate
+              coursework, lectures, and interaction with professors and peers. This online approach ensures a
+              comprehensive education while benefiting from the flexibility of distance learning.</p>
           </div>
 
-          <q-img class="col-5" src="https://cdn.quasar.dev/img/parallax2.jpg" />
+          <q-img class="col-5" src="/study.jpg" />
         </q-card-section>
       </q-card>
 
-      <q-card class="my-card" flat bordered>
-        <q-card-section horizontal>
-          <q-img class="col-5" src="https://cdn.quasar.dev/img/parallax2.jpg" />
 
-          <div class="content">
-            <h2>Tuition Fees</h2>
+      <q-card class="my-card addmarg backdrop" flat>
+        <q-card-section horizontal>
+          <q-img class="col-5" src="/payfee.png" />
+
+          <div class="content odd">
+            <h3>Tuition Fees</h3>
             <p>The total tuition fee for the 3-year duration of the programme is 6,000 Euros.</p>
             <ul>
               <li>1st Year: 3,000 Euros</li>
@@ -95,32 +172,20 @@
             </ul>
             <p>Early Birds who enroll on or before the end of June 2024 will save 1,000 Euros. Installments are allowed.
             </p>
-            <a href="#" class="enroll-button">ENROLL NOW</a>
+            <div class="button-container">
+              <a href="#" class="">ENROLL NOW <img src="/arrow.png" alt=""></a>
+            </div>
           </div>
         </q-card-section>
       </q-card>
 
-      <q-card class="my-card" flat bordered>
+
+
+      <q-card class="my-card addmarg" flat>
         <q-card-section horizontal>
-          <div class="content">
-            <h2>Learning Approach</h2>
-            <p>The Bachelor’s Degree in Civil Engineering is delivered entirely online, providing a flexible learning
-              environment for students. The programme uses advanced e-learning methods and platforms to facilitate
-              coursework, lectures, and interaction with professors and peers. This online approach ensures a
-              comprehensive education while benefiting from the flexibility of distance learning.</p>
-            <a href="#" class="enroll-button">ENROLL NOW</a>
-          </div>
 
-          <q-img class="col-5" src="https://cdn.quasar.dev/img/parallax2.jpg" />
-        </q-card-section>
-      </q-card>
-
-      <q-card class="my-card" flat bordered>
-        <q-card-section horizontal>
-          <q-img class="col-5" src="https://cdn.quasar.dev/img/parallax2.jpg" />
-
-          <div class="content">
-            <h2>Required Documents</h2>
+          <div class="content even">
+            <h3>Required Documents</h3>
             <p>To register for the programme, you need to provide the following documents:</p>
             <ul>
               <li>A copy of your valid ID card or passport.</li>
@@ -130,51 +195,128 @@
               <li>An updated CV.</li>
               <li>English language certification at a minimum level of B2.</li>
             </ul>
-            <a href="#" class="enroll-button">ENROLL NOW</a>
           </div>
+          <q-img class="col-5" src="/docu.jpg" />
         </q-card-section>
       </q-card>
 
-      <q-card class="my-card" flat bordered>
+      <q-card class="my-card addmarg backdrop" flat>
         <q-card-section horizontal>
-          <div class="content">
-            <h2>Class Starts</h2>
+          <q-img class="col-5" src="/learn.jpg" />
+          <div class="content odd">
+            <h3>Class Starts</h3>
             <p>The next academic year is 2024/2025. Your study period starts on 1 August 2024 until 31 July 2025. You
               can start at any time during the academic year.</p>
-            <p>Ensure to contact Greysoft Technologies Nigeria before enrolling.</p>
           </div>
-
-          <q-img class="col-5" src="https://cdn.quasar.dev/img/parallax2.jpg" />
         </q-card-section>
       </q-card>
+    </div>
 
+    <div class="notice">
+      <div style="padding: 15px; width: fit-content; background: black; margin: auto;
+      ">
+        <h4 style="color: rgb(176, 141, 16); font-weight: 600">Note</h4>
+      </div>
+      <p>Ensure to contact Greysoft Technologies Nigeria before enrolling.</p>
+
+      <p> For more information visit: <a href="https://www.galilcol.ac.il/contents.php?id=FAQ_Bsc_Eng">Galilee</a> </p>
+      <p>
+        If you are not enrolling via the Gresoft website, please remember to indicate that you are from Greysoft. This
+        will
+        help us keep track of your progress and ensure smooth study experience. </p>
     </div>
 
     <!-- Footer Section -->
     <div class="footer-main-container">
-      <div class="floating-bar"></div>
-      <div class="footer-container">
-        <div class="footer-content-container">
-          <div class="footer-logo-container">
-            <img width="100px" src="../../public/gsl.png" alt="">
+      <div class="floating-bar">
+        <div class="footer-floating-text-container">
+          <h3>Ready to start learning?</h3>
+          <p>Enroll in our Civil Engineering program today!</p>
+        </div>
+
+        <div class="button-container">
+          <a href="#" class="">ENROLL NOW <img src="/arrow.png" alt=""></a>
+        </div>
+      </div>
+
+      <div class="footer-contents-container">
+        <div class="footer-contents-sub-container">
+          <div class="footer-content-container footer-col-1">
+            <div class="footer-logo-container">
+              <img width="100px" src="/gsl.png" alt="">
+            </div>
+            <p class="footer-header">Physical Address in Nigeria:</p>
+            <p>GreyHobb</p>
+            <p style="display: flex; align-items: center;">
+              <img class="q-mr-xs" width="18px" src="/location.png" alt="">
+              31, Gwari Avenue, Barnawa, Kaduna, Nigeria
+            </p>
+            <p>
+              <q-icon class="q-mr-xs" size="xs" name="email" />
+              <a href="mailto:hi@greysoft.ng">hi@greysoft.ng</a>
+            </p>
           </div>
-          <p>this is it</p>
-          <p>this is it</p>
-        </div>
-        <div class="footer-content-container">
 
-        </div>
-        <div class="footer-content-container">
+          <div class="footer-content-container footer-col-2">
+            <div>
+              <p class="footer-header">Greysoft Nigeria</p>
+              <p>
+                <q-icon size="xs" name="person" />
+                Miss Stephanie Akut
+              </p>
+              <p>
+                <q-icon class="q-mr-xs" size="xs" name="phone" />
+                <a href="tel:+234 0000 0000 0">+234 0000 0000 0</a>
+              </p>
+              <p>
+                <q-icon class="q-mr-xs" size="xs" name="email" />
+                <a href="mailto:stephanie@greysoft.ng">stephanie@greysoft.ng</a>
+              </p>
+              <p class="" style="display: flex; align-items: center;">
+                <img class="q-mr-xs" width="16px" src="/wts.png" alt="" style="">
+                <a href="tel:+234 0000 0000 0">+234 0000 0000 0</a>
+              </p>
+            </div>
+          </div>
 
+          <div class="footer-content-container footer-col-3">
+            <div>
+              <p class="footer-header">Medea University</p>
+              <p>
+                <q-icon size="xs" name="person" />
+                Mrs Sharon Ben Moshe
+              </p>
+              <p>
+                <q-icon class="q-mr-xs" size="xs" name="email" />
+                <a href="mailto:sbenmoshe@galilcol.ac.il">sbenmoshe@galilcol.ac.il</a>
+              </p>
+              <p>
+                <q-icon class="q-mr-xs" size="xs" name="phone" />
+                <a href="tel:+972 4 642 8832">+972 4 642 8832</a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
     </div>
+
+    <q-btn label="Alert" color="primary" />
+
+    <q-dialog v-model="alert">
+      <q-card style="width: 700px;">
+        <q-img class="" src="/gscert.jpg" width="100%" style="" />
+        <q-card-actions align="right">
+          <q-btn flat label="Close" color="primary" v-close-popup />
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
   </q-page>
 </template>
 
 <script>
 
+import { ref } from 'vue'
 import SvgIcon from '../components/SvgIcon.vue'
 export default {
   name: 'IndexPage',
@@ -187,7 +329,40 @@ export default {
 
   components: {
     SvgIcon, // Register the SvgIcon component
+  },
+
+  mounted() {
+    this.setup()
+  },
+
+  methods: {
+    setup() {
+      let navButtons = document.getElementsByClassName('nav-button')
+
+      for (let i = 0; i < navButtons.length; i++) {
+        navButtons[i].addEventListener('click', function () {
+          let activeNav = document.getElementsByClassName('active-nav')
+
+          if (activeNav.length > 0) {
+            activeNav[0].className = activeNav[0].className.replace(
+              ' active-nav',
+              ''
+            )
+          }
+          this.className += ' active-nav'
+        })
+      }
+    },
+  },
+
+  setup() {
+    return {
+      alert: ref(false),
+
+      address: ref('')
+    }
   }
+
 }
 
 </script>
@@ -195,344 +370,111 @@ export default {
 <!--  -->
 
 <style>
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
+.gscert {}
+</style>
+
+
+<style lang="scss">
+@mixin white-gradient {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.header-parent {
-  display: block;
-  width: 100%;
-  height: 79svh;
-  position: relative;
-  overflow: hidden;
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7))
+  }
 }
 
-.header-parent::before {
-  display: block;
-  content: '';
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 73, 112, 0.922);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 
-.header-parent::after {
-  display: block;
-  content: '';
-  width: 20%;
-  height: 70%;
-  background: rgb(255, 255, 255);
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-  border-radius: 100px 100px 0 0;
-  z-index: -1;
-}
-
-.hero-section-logos-contianer {
-  width: 20%;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  left: 10%;
-  bottom: 0;
-}
-
-.hero-section-logos-contianer>img:nth-child(1) {
-  width: 43%;
-}
-
-.hero-section-logos-contianer>img:nth-child(2) {
-  width: 40%;
-}
-
-.hero-section-logos-contianer>img:nth-child(3) {
-  width: 52%;
-}
-
-.header-parent>img {
-  width: 100%;
-  position: absolute;
-  top: -120px;
-  left: 0;
-  z-index: -2;
-}
-
-.grey-logo {
-  width: 20%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: left;
-  padding: 0 0 0 3%;
-  align-items: center;
-}
-
-.grey-logo>img {
-  width: 55%;
-}
-
-.header-container {
-  display: flex;
-  width: 98%;
-  height: 12%;
-  padding: 10px 3%;
-  margin: auto;
-  justify-content: space-between;
+// Styling
+.slider {
   background: white;
-  border-radius: 0 0 100px 100px;
-}
-
-.header-nav {
-  display: flex;
-  width: 45%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-nav>ul {
-  display: flex;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  height: 300px;
+  margin-top: 30px;
+  overflow: hidden;
+  position: relative;
   width: 100%;
-  height: 100%;
-  padding: 0 20px;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  background: rgba(0, 73, 112, 0.074);
-  border-radius: 100px;
+
+  &::before,
+  &::after {
+    @include white-gradient;
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slide-track {
+    height: 100%;
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    width: calc(500px * 14);
+  }
+
+  .slide {
+    height: 100%;
+    background: white;
+    width: 500px;
+  }
+
+  .slide div {
+    height: 100%;
+  }
 }
 
-.header-nav>ul>li {
-  font-size: 1.3em;
+.partnership-certificate {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.header-nav>ul>li>a {
-  color: rgb(0, 73, 112);
-  font-weight: 600;
+.partnership-certificate h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
-/*  */
-
-.hero-section-main-contianer {
-  background: rgba(255, 255, 255, 0);
-  width: 100%;
-  height: 88%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.partnership-certificate img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.hero-section-contianer {
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  display: flex;
-  justify-content: right;
-  align-items: flex-end;
+.download-brochure {
+  margin-top: 20px;
 }
 
-.hero-section-contianer .button-container {
-  width: 70%;
-  height: 15%;
-  padding-left: 6%;
-  display: flex;
-  align-items: center;
-}
-
-.button-container>a {
-  display: flex;
-  margin-top: -50px;
-  background: rgb(255, 170, 0);
-
+.brochure-button {
+  padding: 10px 20px;
+  background-color: rgba(0, 73, 112, 0.9);
   color: #fff;
-  font-size: 1.3em;
-  font-weight: 600;
   text-decoration: none;
   border-radius: 5px;
-  outline: 1px solid rgb(255, 170, 0);
-  outline-offset: 5px;
-  box-sizing: border-box;
-  height: 60px;
-  width: 180px;
-  justify-content: center;
-  align-items: center;
-  animation: outline .9s infinite ease-in-out;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
 }
 
-.button-container>a>img {
-  width: 35px;
-  margin-top: 5px;
-  animation: arrow .9s infinite ease-in-out;
-}
-
-@keyframes outline {
-  0% {
-    outline-offset: 8px;
-  }
-
-  50% {
-    outline-offset: 5px;
-  }
-
-  100% {
-    outline-offset: 8px;
-  }
-}
-
-@keyframes arrow {
-  0% {
-    transform: translateX(0px)
-  }
-
-  50% {
-    transform: translateX(15px)
-  }
-
-  100% {
-    transform: translateX(0px)
-  }
-}
-
-.button-container>a:hover {
-  animation-name: none;
-}
-
-.hero-section-text-contianer {
-  width: 70%;
-  height: 85%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 6%;
-}
-
-.hero-section-text-contianer>h1 {
-  width: 100%;
-  font-size: 5em;
-  text-align: right;
-  font-family: Arial, sans-serif;
-  font-weight: 900;
-  color: rgb(255, 170, 0);
-}
-
-.hero-section-text-contianer>h1,
-.hero-section-text-contianer>p {
-  margin: 25px;
-}
-
-.hero-section-text-contianer>p {
-  width: 100%;
-  font-size: 2em;
-  font-family: Arial, sans-serif;
-  color: white;
-  text-align: left;
-}
-
-@media (min-width: 1700px) {
-  .header-parent {
-    width: 100%;
-    height: 87svh;
-  }
-
-  .hero-section-text-contianer>h1 {
-    width: 100%;
-    font-size: 6em;
-    text-align: right;
-    font-family: Arial, sans-serif;
-    font-weight: 900;
-    color: rgb(255, 170, 0);
-  }
-
-  .hero-section-text-contianer>p {
-    width: 100%;
-    font-size: 2.5em;
-    font-family: Arial, sans-serif;
-    color: white;
-    text-align: left;
-  }
-
-  .header-parent::after {
-    width: 17%;
-    height: 70%;
-    left: 13%;
-    border-radius: 100px 100px 0 0;
-  }
-
-  .hero-section-logos-contianer {
-    width: 17%;
-    height: 70%;
-    left: 13%;
-  }
-
-  .hero-section-logos-contianer>img:nth-child(1) {
-    width: 46%;
-  }
-
-  .hero-section-logos-contianer>img:nth-child(2) {
-    width: 40%;
-  }
-
-  .hero-section-logos-contianer>img:nth-child(3) {
-    width: 55%;
-  }
-
-  .hero-section-text-contianer {
-    padding: 6%;
-  }
-
-  .hero-section-text-contianer>h1,
-  .hero-section-text-contianer>p {
-    margin: 25px;
-  }
-
-  .hero-section-contianer .button-container {
-    width: 70%;
-    height: 15%;
-    padding-left: 6%;
-    display: flex;
-    align-items: center;
-  }
-
-  .button-container>a {
-    padding: 15px;
-    margin-top: -70px;
-    background: rgb(255, 170, 0);
-
-    color: #fff;
-    font-size: 1.3em;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 5px;
-    outline: 1px solid rgb(255, 170, 0);
-    outline-offset: 5px;
-  }
-}
-
-/*  */
-
-.footer-main-container{
-  width: 100%;
-  height: 490px;
-  background: rgba(0, 73, 112, 0.074);
-  position: relative;
-  margin-top: 150px;
-}
-.footer-main-container .floating-bar{
-width: 75%;
-background: rgba(0, 73, 112);
-height: 130px;
-margin: auto;
-transform: translateY(-40px);
-box-shadow: -18px -18px  rgba(0, 73, 112, 0.201);
+.brochure-button:hover {
+  background-color: rgba(0, 73, 112, 1);
 }
 </style>
